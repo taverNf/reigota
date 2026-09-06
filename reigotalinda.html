@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reigota linda</title>
+  <style>
+    body {
+      background-color: bisque;
+    }
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: blueviolet;
+    }
+    img {
+      display: block;
+      margin: auto;
+      height: 80vh;
+    }
+    button {
+      display: block;
+      margin: auto;
+      aspect-ratio: 1;
+      width: 100px;
+      border-radius: 100px;
+      
+    }
+  </style>
+</head>
+<body>
+  <h1>Nicolas</h1>
+  <p>Nicolas é uma pessoa incrivel que mudou minha vida para melhor,eu amo ele eternamente</p>
+  <img id="imagem" src="./j8.jfif" alt="meu amor com seus coleguinhas insuportaveis">
+  <button id="botao" onclick="trocarfoto()">trocar foto</button>
+  <script>
+    function trocarfoto() {
+      const imagem = document.getElementById("imagem")
+      imagem.src = "./j10.jfif"
+      imagem.setAttribute("alt", "eu i meu amor no show do Luan Santana")
+    }
+  </script>
+</body>
+</html>
