@@ -24,7 +24,7 @@
       aspect-ratio: 1;
       width: 100px;
       border-radius: 100px;
-      
+
     }
   </style>
 </head>
@@ -39,6 +39,19 @@
       imagem.src = "./j10.jfif"
       imagem.setAttribute("alt", "eu i meu amor no show do Luan Santana")
     }
+
+    function autorizarEntrada(){
+      const senha = '2307'
+      const input = prompt('insira a senha', '')
+
+      if (input === senha) {
+        return;
+      } else {
+        document.body.innerHTML = '<h1>Errou bobão</h1>'
+      }
+    }
+
+    autorizarEntrada()
   </script>
 </body>
 </html>
